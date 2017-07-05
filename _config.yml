@@ -1,1 +1,20 @@
 theme: jekyll-theme-midnight
+markdown: pandoc
+name: Popcrate
+gems:
+  - jekyll-sitemap
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "my-site"
+  -
+    scope:
+      path: "projects"
+      type: "pages" # previously `page` in Jekyll 2.2.
+    values:
+      layout: "project" # overrides previous default layout
+      author: "Popcrate"
